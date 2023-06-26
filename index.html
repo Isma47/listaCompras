@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="dist/app.css" />
+</head>
+
+<body>
+    <header class="bg-pink-600 py-11">
+        <h1 class="text-center text-6xl font-extrabold">Compras del día.</h1>
+    </header>
+
+    <main class="m-auto my-10 flex h-full w-11/12 bg-pink-600 p-9">
+        <section class="m-auto md:grid md:grid-cols-2 bg-pink-400">
+            <div class="p-5">
+                <h2 class="text-3xl font-bold">Ingresa tu compra</h2>
+
+                <form action="" id="formulario">
+                    <div class="flex flex-col py-10">
+                        <div id="campoVacio"></div>
+                        <label for="" class="text-xl">Ingresa el producto:</label>
+                        <input type="text" placeholder="Ingresa el producto" class="md:w-96 p-2" id="producto" />
+
+                        <label for="" class="text-xl">Ingresa el precio:</label>
+                        <input type="text" placeholder="Ingresa el precio" class="md:w-96 p-2" id="precio" />
+                    </div>
+
+                    <input type="submit" value="Enviar" class="rounded-lg bg-white px-7 py-2" />
+                </form>
+            </div>
+            <div class="p-5">
+                <h2 class="text-3xl font-bold">Tus compras</h2>
+                <ul id="lista">
+
+                </ul>
+
+                <div id="resultado">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
